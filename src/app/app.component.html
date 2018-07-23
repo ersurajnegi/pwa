@@ -1,31 +1,10 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<section style="margin-top:40px;">
+<button (click)="signIn();">
+        Sign In</button>
 
-      <mat-accordion>
+<button (click)="signOut();">Sign Out</button>
 
-            <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                        Story 1
-                  </mat-expansion-panel-header>
-                  Edit state details in workflow configuration.
-            </mat-expansion-panel>
-            <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                        Story 2
-                  </mat-expansion-panel-header>
-                  Edit state details in workflow configuration.
-            </mat-expansion-panel>
-            <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                        Story 3
-                  </mat-expansion-panel-header>
-                  Edit state details in workflow configuration.
-            </mat-expansion-panel>
-            <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                        Story 4
-                  </mat-expansion-panel-header>
-                  Edit state details in workflow configuration.
-            </mat-expansion-panel>
-      </mat-accordion>
-</section>
+
+<button (click)="getLabels();">Get Labels</button>
+
+
+<mat-card style="margin-bottom: 5px;" *ngFor="let label of labels">{{label.name}}</mat-card>
