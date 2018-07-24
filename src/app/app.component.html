@@ -1,10 +1,5 @@
-<button (click)="signIn();">
-        Sign In</button>
-
-<button (click)="signOut();">Sign Out</button>
-
-
-<button (click)="getLabels();">Get Labels</button>
-
-
-<mat-card style="margin-bottom: 5px;" *ngFor="let label of labels">{{label.name}}</mat-card>
+<div class="container">
+        <div class="row">
+                <router-outlet></router-outlet>
+        </div>
+</div>
